@@ -46,16 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="clsCola.cs" />
+    <Compile Include="clsPaciente.cs" />
+    <Compile Include="frmPacientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmPacientes.Designer.cs">
+      <DependentUpon>frmPacientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmSiguiente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSiguiente.Designer.cs">
+      <DependentUpon>frmSiguiente.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmPacientes.resx">
+      <DependentUpon>frmPacientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +74,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmSiguiente.resx">
+      <DependentUpon>frmSiguiente.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
